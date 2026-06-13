@@ -8,6 +8,13 @@ dist
 dist-ssr
 *.local
 
+# Environment / secrets (project has a no-keys rule — belt and braces)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
 # tsc -b composite emit for config files
 vite.config.js
 vite.config.d.ts
